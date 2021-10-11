@@ -1,5 +1,33 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    padding: 1em;
+    border-radius: 0.25em;
+    color: rgba(255,128,128,1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+button:hover {
+    box-shadow: 14px 14px 14px rgba(0,0,0,0.65);
+    font-size:4.15em;
+    color: red;
+}
+#grid-divs {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#grid-divs section{
+    width: 33.33%;
 }
